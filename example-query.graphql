@@ -1,0 +1,18 @@
+query GetDrugs {
+  getDrugById(id: "1537") {
+    id
+    label {
+      name
+      slug
+    }
+    schedule
+  }
+
+  getPlans {
+    plans {
+      coverage_type
+      period
+      price
+    }
+  }
+}

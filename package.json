@@ -1,0 +1,10 @@
+{
+  "name": "graphql-federation-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "cd gateway && yarn install && cd ../servers/server-one && yarn install && cd ../server-two && yarn install",
+    "start": "concurrently \"cd servers/server-one && yarn start\" \"cd servers/server-two && yarn start\" \"cd gateway && yarn start \""
+  }
+}
